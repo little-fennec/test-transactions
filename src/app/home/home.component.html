@@ -1,0 +1,21 @@
+<div class="card text-center mt-4">
+    <div class="separator pb-4"></div>
+    <h1 class="card-title mt-3">Welcome</h1>
+    <p>With supporting text below as a natural lead-in to additional content.</p>
+    <div>
+        <button
+                [routerLink]="['/navigator']"
+                [queryParams]="{tab: 0}"
+                class="btn btn-primary mb-4">
+            See transactions
+        </button>
+    </div>
+    <div class="separator">You have {{storeService.totalTransactions}} transactions</div>
+</div>
+
+<div class="small-cards row">
+    <app-card *ngFor="let tab of storeService.tabList; let idx = index"
+              [title]="tab"
+              [index]="idx"
+              class="col-6 mb-4"></app-card>
+</div>

@@ -1,0 +1,31 @@
+.container-tabs {
+  max-width: 25rem;
+  margin: 1.8rem auto;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+
+  li.nav-item {
+    width: 25%;
+    text-align: center;
+    a {
+      color: #1f1f1f;
+      border-radius: 10px 10px 0 0;
+      border: 1px solid #1f1f1f;
+      border-bottom: #fefefe;
+      font-size: 0.7rem;
+    }
+    .active {
+      background: #e0e0e0;
+    }
+  }
+
+  .tab-content {
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    thead th{
+      border: none;
+      font-weight: normal;
+    }
+  }
+}
