@@ -10,7 +10,7 @@
             See transactions
         </button>
     </div>
-    <div class="separator">You have {{storeService.totalTransactions}} transactions</div>
+    <div class="separator">You have {{ totalTransactions$ | async }} transactions</div>
 </div>
 
 <div class="small-cards row">

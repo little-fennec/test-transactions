@@ -1,6 +1,6 @@
 <div class="card small-card">
     <div class="card-body">
-        <div class="card-title total-count">{{count}}</div>
+        <div class="card-title total-count">{{count$ | async}}</div>
         <div class="card-text">{{title}}</div>
         <button class="btn btn-primary float-right mt-4"
                 [routerLink]="['/navigator']"
